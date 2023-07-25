@@ -15,7 +15,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap" rel="stylesheet">
 
     <style>
-        .font-lato{
+        .font-lato {
             font-family: 'Lato', sans-serif;
         }
     </style>
@@ -36,8 +36,65 @@
 </head>
 
 <body class="font-lato">
-    <header></header>
-    <main></main>
+    <header class="container mx-auto my-12">
+
+        <div class="navbar lg:bg-[#F85559] rounded-full px-8 py-8">
+
+
+            <div class="navbar-start hidden lg:flex">
+
+                <ul class="menu menu-horizontal px-1 lg:text-white font-medium text-lg">
+                    <li><a>Home</a></li>
+                        <li><a>About Us</a></li>
+                        <li><a>Shop</a></li>
+                        <li><a>All Fruits</a></li>
+                </ul>
+
+
+            </div>
+            <div class="navbar-center flex-row-reverse gap-3 lg:-ml-28">
+                <h2 class="text-4xl font-bold lg:text-white">Fruit Burst</h2>
+                <img src="./images/logo.png" alt="">
+            </div>
+            <div class="navbar-end md:flex-1">
+                <div class="dropdown">
+                    <label tabindex="0" class="btn btn-ghost lg:hidden">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h8m-8 6h16" />
+                        </svg>
+                    </label>
+                    <ul tabindex="0"
+                        class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-30">
+                        <li><a>Home</a></li>
+                        <li><a>About Us</a></li>
+                        <li><a>Shop</a></li>
+                        <li><a>All Fruits</a></li>
+                    </ul>
+                </div>
+
+                <div class="form-control hidden lg:block relative">
+                <input type="text" placeholder="Search here" class="input input-bordered w-80 md:w-80 rounded-full" />
+                <div class="absolute -mt-[36px] ml-[270px]">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                    <path d="M21 21L15.803 15.803M15.803 15.803C17.2096 14.3965 17.9998 12.4887 17.9998 10.4995C17.9998 8.51035 17.2096 6.60262 15.803 5.19605C14.3965 3.78947 12.4887 2.99927 10.4995 2.99927C8.51035 2.99927 6.60262 3.78947 5.19605 5.19605C3.78947 6.60262 2.99927 8.51035 2.99927 10.4995C2.99927 12.4887 3.78947 14.3965 5.19605 15.803C6.60262 17.2096 8.51035 17.9998 10.4995 17.9998C12.4887 17.9998 14.3965 17.2096 15.803 15.803Z" stroke="#121212" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </div>
+                
+            </div>
+            
+        </div>
+        </div>
+        
+
+
+    </header>
+    <main class="container mx-auto">
+
+        
+
+    </main>
     <footer></footer>
 
 </body>
