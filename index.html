@@ -45,9 +45,9 @@
 
                 <ul class="menu menu-horizontal px-1 lg:text-white font-medium text-lg">
                     <li><a>Home</a></li>
-                        <li><a>About Us</a></li>
-                        <li><a>Shop</a></li>
-                        <li><a>All Fruits</a></li>
+                    <li><a>About Us</a></li>
+                    <li><a>Shop</a></li>
+                    <li><a>All Fruits</a></li>
                 </ul>
 
 
@@ -57,7 +57,7 @@
                 <img src="./images/logo.png" alt="">
             </div>
             <div class="navbar-end md:flex-1">
-                <div class="dropdown">
+                <div class="dropdown dropdown-end">
                     <label tabindex="0" class="btn btn-ghost lg:hidden">
                         <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
                             stroke="currentColor">
@@ -66,33 +66,123 @@
                         </svg>
                     </label>
                     <ul tabindex="0"
-                        class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-30">
+                        class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
                         <li><a>Home</a></li>
                         <li><a>About Us</a></li>
                         <li><a>Shop</a></li>
                         <li><a>All Fruits</a></li>
+                        <li><a>
+                                <div class="form-control block relative">
+                                    <input type="text" placeholder="Search here"
+                                        class="input input-bordered w-40 md:w-40 rounded-full" />
+                                    <div class="absolute -mt-[32px] ml-[120px]">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                            viewBox="0 0 24 24" fill="none">
+                                            <path
+                                                d="M21 21L15.803 15.803M15.803 15.803C17.2096 14.3965 17.9998 12.4887 17.9998 10.4995C17.9998 8.51035 17.2096 6.60262 15.803 5.19605C14.3965 3.78947 12.4887 2.99927 10.4995 2.99927C8.51035 2.99927 6.60262 3.78947 5.19605 5.19605C3.78947 6.60262 2.99927 8.51035 2.99927 10.4995C2.99927 12.4887 3.78947 14.3965 5.19605 15.803C6.60262 17.2096 8.51035 17.9998 10.4995 17.9998C12.4887 17.9998 14.3965 17.2096 15.803 15.803Z"
+                                                stroke="#121212" stroke-width="1.5" stroke-linecap="round"
+                                                stroke-linejoin="round" />
+                                        </svg>
+                                    </div>
+
+                                </div>
+                            </a></li>
                     </ul>
                 </div>
 
                 <div class="form-control hidden lg:block relative">
-                <input type="text" placeholder="Search here" class="input input-bordered w-80 md:w-80 rounded-full" />
-                <div class="absolute -mt-[36px] ml-[270px]">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-                    <path d="M21 21L15.803 15.803M15.803 15.803C17.2096 14.3965 17.9998 12.4887 17.9998 10.4995C17.9998 8.51035 17.2096 6.60262 15.803 5.19605C14.3965 3.78947 12.4887 2.99927 10.4995 2.99927C8.51035 2.99927 6.60262 3.78947 5.19605 5.19605C3.78947 6.60262 2.99927 8.51035 2.99927 10.4995C2.99927 12.4887 3.78947 14.3965 5.19605 15.803C6.60262 17.2096 8.51035 17.9998 10.4995 17.9998C12.4887 17.9998 14.3965 17.2096 15.803 15.803Z" stroke="#121212" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                    </svg>
+                    <input type="text" placeholder="Search here"
+                        class="input input-bordered w-80 md:w-80 rounded-full" />
+                    <div class="absolute -mt-[36px] ml-[270px]">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <path
+                                d="M21 21L15.803 15.803M15.803 15.803C17.2096 14.3965 17.9998 12.4887 17.9998 10.4995C17.9998 8.51035 17.2096 6.60262 15.803 5.19605C14.3965 3.78947 12.4887 2.99927 10.4995 2.99927C8.51035 2.99927 6.60262 3.78947 5.19605 5.19605C3.78947 6.60262 2.99927 8.51035 2.99927 10.4995C2.99927 12.4887 3.78947 14.3965 5.19605 15.803C6.60262 17.2096 8.51035 17.9998 10.4995 17.9998C12.4887 17.9998 14.3965 17.2096 15.803 15.803Z"
+                                stroke="#121212" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </div>
+
                 </div>
-                
+
             </div>
-            
         </div>
-        </div>
-        
+
 
 
     </header>
     <main class="container mx-auto">
 
-        
+        <!-- slider section -->
+
+        <section class="my-14">
+            <div class="carousel w-full">
+                <div id="slide1" class="carousel-item relative w-full ">
+                    <div class="hero md:h-[600px]" style="background-image: url('./images/banner1.png');">
+                        <div class="hero-overlay bg-opacity-60 brightness-50"></div>
+                        <div class="hero-content text-center text-neutral-content">
+                          <div class="max-w-md">
+                            <h1 class="mb-6 text-white text-6xl font-extrabold">Exotic tastes at your doorstep</h1>
+                            <p class="mb-8 font-medium text-xl text-white">We supply highly quality organic products</p>
+                            <button class="btn btn-primary px-7 py-5 bg-[#F85559] border border-0">Shop Now</button>
+                          </div>
+                        </div>
+                      </div>
+                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                        <a href="#slide4" class="btn btn-circle">❮</a>
+                        <a href="#slide2" class="btn btn-circle">❯</a>
+                    </div>
+                </div>
+                <div id="slide2" class="carousel-item relative w-full">
+                    <div class="hero md:h-[600px]" style="background-image: url('./images/banner2.png');">
+                        <div class="hero-overlay bg-opacity-60 brightness-50"></div>
+                        <div class="hero-content text-center text-neutral-content">
+                          <div class="max-w-md">
+                            <h1 class="mb-6 text-white text-6xl font-extrabold">Exotic tastes at your doorstep</h1>
+                            <p class="mb-8 font-medium text-xl text-white">We supply highly quality organic products</p>
+                            <button class="btn btn-primary px-7 py-5 bg-[#F85559] border border-0">Shop Now</button>
+                          </div>
+                        </div>
+                      </div>
+                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                        <a href="#slide1" class="btn btn-circle">❮</a>
+                        <a href="#slide3" class="btn btn-circle">❯</a>
+                    </div>
+                </div>
+                <div id="slide3" class="carousel-item relative w-full">
+                    <div class="hero md:h-[600px]" style="background-image: url('./images/banner3.png');">
+                        <div class="hero-overlay bg-opacity-60 brightness-50"></div>
+                        <div class="hero-content text-center text-neutral-content">
+                          <div class="max-w-md">
+                            <h1 class="mb-6 text-white text-6xl font-extrabold">Exotic tastes at your doorstep</h1>
+                            <p class="mb-8 font-medium text-xl text-white">We supply highly quality organic products</p>
+                            <button class="btn btn-primary px-7 py-5 bg-[#F85559] border border-0">Shop Now</button>
+                          </div>
+                        </div>
+                      </div>
+                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                        <a href="#slide2" class="btn btn-circle">❮</a>
+                        <a href="#slide4" class="btn btn-circle">❯</a>
+                    </div>
+                </div>
+                <div id="slide4" class="carousel-item relative w-full">
+                    <div class="hero md:h-[600px]" style="background-image: url('./images/banner4.png');">
+                        <div class="hero-overlay bg-opacity-60 brightness-50"></div>
+                        <div class="hero-content text-center text-neutral-content">
+                          <div class="max-w-md">
+                            <h1 class="mb-6 text-white text-6xl font-extrabold">Exotic tastes at your doorstep</h1>
+                            <p class="mb-8 font-medium text-xl text-white">We supply highly quality organic products</p>
+                            <button class="btn btn-primary px-7 py-5 bg-[#F85559] border border-0">Shop Now</button>
+                          </div>
+                        </div>
+                      </div>
+                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                        <a href="#slide3" class="btn btn-circle">❮</a>
+                        <a href="#slide1" class="btn btn-circle">❯</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
 
     </main>
     <footer></footer>
